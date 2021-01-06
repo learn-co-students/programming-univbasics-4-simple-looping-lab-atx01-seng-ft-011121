@@ -15,7 +15,7 @@ def loop_message_n_times(message, limit)
     count += 1
   end
 end
-loop_message_n_times("Hello Moon", 10)
+loop_message_n_times("Hello Moon", 5)
 
 def output_array(array)
   count = 0
@@ -30,13 +30,17 @@ output_array("Be yourself; everyone else is already taken - Oscar Wilde")
 
 def return_string_array(array)
   count = 0 
-  new_array = [5, 4, 3, 2, 1]
-  while count = array.length do 
-    new_array.push(array[count])
-    count +=1 
-  end 
-  new array
-end
+  new_array = []
+  while count < array.length do 
+    new_array.push(array[count].to_s)
+    count += 1 
+  end
+  new_array
+end 
+
+
+
+
 
 
 
